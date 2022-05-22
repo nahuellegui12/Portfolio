@@ -9,7 +9,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: #d35e5e;
+  background: #e2dada;
   padding: 0 20px; }
   .container .card-container {
     display: flex;
@@ -56,6 +56,26 @@ body {
   padding: 20px;
   text-align: center; }
 
+.project-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .project-container h2 {
+    font-size: 35px; }
+  .project-container .project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2; }
+    .project-container .project a img {
+      height: 400px;
+      width: 400px;
+      min-height: 100px; }
+  .project-container .project:hover {
+    opacity: .60;
+    transition: .2; }
+
 .skill-container {
   margin: 0;
   padding: 0;
@@ -82,6 +102,26 @@ body {
         width: 90px;
         height: 90px; }
 
+.contac-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background: #e2dada;
+  height: 150px;
+  margin: 100px 0 0 0; }
+  .contac-container .contac {
+    display: flex; }
+    .contac-container .contac .contac-icon {
+      display: flex;
+      justify-content: start;
+      align-items: flex-start;
+      flex-direction: column; }
+      .contac-container .contac .contac-icon a {
+        margin: 5px 20px;
+        font-size: 20px;
+        text-decoration: none;
+        color: #343036; }
+
 @media (max-width: 640px) {
   .card-container {
     display: block;
@@ -96,4 +136,7 @@ body {
       padding: 5px 20px 20px 2px;
       background: transparent; }
       .card-container .descripcion p {
-        margin: 10px 20px; } }
+        margin: 10px 20px; }
+  .project a img {
+    height: 250px;
+    width: 250px; } }

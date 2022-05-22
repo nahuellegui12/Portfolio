@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: rgb(211, 94, 94);
+    background: rgb(226, 218, 218);
     padding: 0 20px;
 
     .card-container {
@@ -70,4 +70,29 @@
     text-align: center;
 }
 
-
+.project-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h2{
+        font-size: 35px;
+    }
+    .project{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .2;
+        a{
+            img{
+                height: 400px;
+                width: 400px;
+                min-height: 100px;
+            }
+        }
+    }
+    .project:hover{
+        opacity: .60;
+        transition: .2;
+    }
+}
