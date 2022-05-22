@@ -1,4 +1,99 @@
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: 'Akshar', sans-serif; }
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #d35e5e;
+  padding: 0 20px; }
+  .container .card-container {
+    display: flex;
+    width: 800px;
+    height: auto;
+    background: white;
+    border-radius: 2px;
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.2); }
+    .container .card-container .card-header {
+      border-right: 1px solid #ddd; }
+      .container .card-container .card-header a {
+        position: relative;
+        display: block; }
+        .container .card-container .card-header a img {
+          height: 150px;
+          width: 150px;
+          border-radius: 50%;
+          box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.06);
+          margin: 20px 30px;
+          transition: .2s; }
+      .container .card-container .card-header a:hover img {
+        box-shadow: 0 0 0 12px rgba(0, 0, 0, 0.1); }
+      .container .card-container .card-header .descripcion {
+        display: flex;
+        background: #fbfbfb; }
+      .container .card-container .card-header h2 {
+        color: #343036; }
+      .container .card-container .card-header h4 {
+        margin-bottom: 20px; }
+  .container .descripcion {
+    position: relative; }
+    .container .descripcion p {
+      margin: 70px 30px 20px;
+      font-size: 18px;
+      font-weight: 20px; }
+    .container .descripcion .social {
+      margin-top: 25px; }
+      .container .descripcion .social a {
+        display: inline-block;
+        padding: 0 15px;
+        color: #343036; }
+
+.card-header, .descripcion {
+  padding: 20px;
+  text-align: center; }
+
+.skill-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 150px 0; }
+  .skill-container h2 {
+    display: inline-block;
+    padding-bottom: 50px;
+    font-size: 35px;
+    text-shadow: 2px 2px 10px 0 grey; }
+  .skill-container .skill-stack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .skill-container .skill-stack .skill {
+      display: flex;
+      margin: 10px 20px; }
+      .skill-container .skill-stack .skill img {
+        width: 90px;
+        height: 90px; }
+
+@media (max-width: 640px) {
+  .card-container {
+    display: block;
+    flex-direction: column;
+    width: 450px; }
+    .card-container .card-header {
+      padding: 20px 20px 5px 20px;
+      border: none; }
+      .card-container .card-header h4 {
+        margin: 0; }
+    .card-container .descripcion {
+      padding: 5px 20px 20px 2px;
+      background: transparent; }
+      .card-container .descripcion p {
+        margin: 10px 20px; } }
